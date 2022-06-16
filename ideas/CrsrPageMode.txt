@@ -1,0 +1,37 @@
+0. SetInitialDefaults:
+	MOV AH, 00h
+	MOV AL, 03h
+    INT 10h
+    CLD
+
+
+1.show standard blinking text cursor
+	MOV AH, 01h
+	MOV CL, 7
+	mov ch, 6
+	INT 10h
+
+2. hide blinking text cursor
+	MOV AH, 01h
+	MOV CL, 7
+	mov ch, 32
+	INT 10h
+
+3. set text-mode cursor shape
+	;input: CH = cursor start line (bits 0-4) and options (bits 5-7)
+	MOV AH, 01h
+	MOV CL, 7
+	mov ch, 6
+	INT 10h
+4. set cursor position
+	;INPUT:  DH = row, DL = column, BH = page number (0..7)
+	mov ah, 02H
+	mov dh, row
+	mov dl, colmn
+	mov bh, 0
+	int 10h
+
+5. get cursor position and size
+6. select active video page
+7. scroll up window
+8. scroll down window

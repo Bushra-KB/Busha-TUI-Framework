@@ -1,0 +1,43 @@
+PrintFunctions:
+---------------
+1. write character and attribute at cursor position
+	mov ah, 09h
+	mov al, char
+	mov bh, page
+	mov bl, attrib
+	mov cx, numTimes
+	int 10h
+
+2. write character only at cursor position
+	mov ah, 0Ah
+	mov al, char
+	mov bh, page
+	mov cx, numTimes
+	int 10h
+
+3. print string 1
+	;IN: SI = message location (zero-terminated string)
+
+	pusha
+	mov ah, 0Eh
+	rept:
+		lodsb
+		cmp al, 0
+		je done
+		int 10h
+		jmp rept
+	done:
+	 popa
+	 ret
+
+4. print string with attrib
+	;in: ES:BP string, CX=num of chars, bl=attributes, DL,DH = column, row at which to start writing
+	mov al, 1
+	mov bh, 0
+	mov ah, 13h
+	int 10h
+
+5. print a string at DS:DX. String must be terminated by '$'
+ ;in string at DS:DX
+ mov ah, 9
+ int 21h

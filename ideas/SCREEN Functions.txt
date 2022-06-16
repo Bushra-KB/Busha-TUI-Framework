@@ -1,0 +1,26 @@
+SCREEN Functions;
+-----------------
+1. ClrScrn default
+	;select active video page
+	;Position cursor at top-left
+	bh=0
+	dh=0
+	dl=0
+	ah=2
+	int 10h
+
+	mov ah, 6
+	mov al, 0			; Normal black on blue
+	mov bh, 0001_0000b
+	mov cx, 0			; Top-left
+	mov dh, 24			; Bottom-right
+	mov dl, 79
+	int 10h
+
+2. ClrScrn 2
+	;input
+		;page, attribute
+
+
+
+
