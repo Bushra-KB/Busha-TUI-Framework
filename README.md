@@ -1,5 +1,5 @@
 # Busha-TUI-Framework
-A framework and libraries for developing a user interface using VGA text Mode(80x25)
+A framework and libraries for developing a user interface using VGA text Mode(80 x 25)
 
 ## What is Text-based user interface(TUI)?
 <p>
