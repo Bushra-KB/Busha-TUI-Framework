@@ -11,3 +11,24 @@ For Example Figure 1:
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Fdedit.png" />
   
   </center>
+
+## Features
+
+- **VGA Text Mode (80x25)**: Utilizes the VGA text mode for creating user interfaces.
+- **8086 Assembly Language**: Implemented using 8086 assembly language for low-level hardware control.
+- **Efficient and Responsive**: Designed to be efficient and responsive for text-based UI applications.
+
+## Getting Started
+
+### Prerequisites
+
+- **Assembler**: An assembler like NASM or MASM to compile the assembly code.
+- **Emulator**: An emulator like DOSBox to run the compiled code on modern systems.
+
+### Installation
+
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/yourusername/vga-text-mode-ui-framework.git
+cd vga-text-mode-ui-framework
+```
