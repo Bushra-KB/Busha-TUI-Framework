@@ -30,7 +30,7 @@ For Example Figure 1:
 Clone the repository to your local machine:
 ```bash
 git clone https://github.com/yourusername/vga-text-mode-ui-framework.git
-cd vga-text-mode-ui-framework
+cd Busha-TUI-Framework
 ```
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
