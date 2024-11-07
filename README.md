@@ -23,7 +23,7 @@ For Example Figure 1:
 ### Prerequisites
 
 - **Assembler**: An assembler like NASM or MASM to compile the assembly code.
-- **Emulator**: An emulator like DOSBox to run the compiled code on modern systems.
+- **Emulator**: An emulator like emu8086, DOSBox to run the compiled code on modern systems.
 
 ### Installation
 
@@ -31,4 +31,19 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/yourusername/vga-text-mode-ui-framework.git
 cd vga-text-mode-ui-framework
+```
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+I would like to express my gratitude to my students at the Electrical and Computer Engineering Department at Debre Berhan University. Teaching the “Microprocessor and Interfacing” course to various batches has been a rewarding experience, and their enthusiasm and dedication have greatly contributed to the success of this project. Thank you for your hard work and commitment.
+
+```
+Bushra KM.
+Debre Berhan University, Ethiopia
+2020
+-----
 ```
